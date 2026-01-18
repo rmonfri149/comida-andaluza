@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Formulario de contacto sobre comida tradicional andaluza">
+    <meta name="author" content="Rafael Montes Frias">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contacto</title>
+
+    <style>
+        /* ===== ESTILOS GENERALES ===== */
+
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            background-color: #fdf6ec;
+            margin: 0;
+            padding: 0;
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        #contenedor {
+            width: 100%;
+            margin: 0;
+        }
+
+        /* ===== CABECERA ===== */
+
+        #cabecera {
+            background-color: #8c1d18;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            border-bottom: 5px solid #d4a243;
+        }
+
+        /* ===== MENU ===== */
+
+        #menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background-color: #3a5a40;
+            overflow: hidden;
+        }
+
+        #menu ul li {
+            float: left;
+        }
+
+        #menu ul li a {
+            display: block;
+            padding: 14px 18px;
+            color: white;
+            text-decoration: none;
+        }
+
+        #menu ul li a:hover {
+            background-color: #d4a243;
+            color: black;
+        }
+
+        /* ===== CONTENIDO ===== */
+
+        #contenido {
+            padding: 25px;
+            flex: 1;
+        }
+
+        h2 {
+            color: #3a5a40;
+        }
+
+        /* ===== FORMULARIO ===== */
+
+        form {
+            background-color: #fffaf3;
+            padding: 20px;
+            border: 2px solid #8c1d18;
+            max-width: 500px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .opciones {
+            margin-top: 10px;
+        }
+
+        .opciones input {
+            width: auto;
+        }
+
+        input[type="submit"] {
+            margin-top: 15px;
+            background-color: #8c1d18;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #d4a243;
+            color: black;
+        }
+
+        /* ===== PIE ===== */
+
+        #piePagina {
+            background-color: #3a5a40;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-top: 5px solid #d4a243;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="contenedor">
+
+    <!-- CABECERA -->
+    <div id="cabecera">
+        <h1>Contacto</h1>
+    </div>
+
+    <!-- MENU -->
+    <div id="menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="platos.html">Platos típicos</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+
+    <!-- CONTENIDO -->
+    <div id="contenido">
+
+        <h2>Formulario de contacto</h2>
+
+        <form>
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="provincia">Provincia:</label>
+            <select id="provincia" name="provincia">
+                <option>Sevilla</option>
+                <option>Córdoba</option>
+                <option>Málaga</option>
+                <option>Granada</option>
+                <option>Cádiz</option>
+                <option>Huelva</option>
+                <option>Jaén</option>
+            </select>
+
+            <div class="opciones">
+                <p><strong>Plato favorito:</strong></p>
+                <input type="radio" name="plato" value="gazpacho"> Gazpacho<br>
+                <input type="radio" name="plato" value="salmorejo"> Salmorejo<br>
+                <input type="radio" name="plato" value="flamenquin"> Flamenquín<br>
+                <input type="radio" name="plato" value="otro"> Otro
+            </div>
+
+            <div class="opciones">
+                <p><strong>¿Qué te interesa?</strong></p>
+                <input type="checkbox" name="interes" value="recetas"> Recetas<br>
+                <input type="checkbox" name="interes" value="historia"> Historia<br>
+                <input type="checkbox" name="interes" value="restaurantes"> Restaurantes
+            </div>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <!-- PIE -->
+    <div id="piePagina">
+        <p>Contacto - Comida Tradicional Andaluza</p>
+    </div>
+</div>
+</body>
+</html>

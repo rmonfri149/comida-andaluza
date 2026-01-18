@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Platos típicos de la comida tradicional andaluza">
+    <meta name="keywords" content="platos andaluces, comida tradicional, gastronomía">
+    <meta name="author" content="Rafael Montes Frias">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Platos típicos andaluces</title>
+
+    <style>
+        /* ===== ESTILOS GENERALES ===== */
+
+        body {
+            font-family: Georgia, "Times New Roman", serif;
+            background-color: #fdf6ec;
+            margin: 0;
+            padding: 0;
+        }
+
+        #contenedor {
+            width: 100%;
+            margin: 0;
+        }
+
+        /* ===== CABECERA ===== */
+
+        #cabecera {
+            background-color: #8c1d18;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            border-bottom: 5px solid #d4a243;
+        }
+
+        /* ===== MENÚ ===== */
+
+        #menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background-color: #3a5a40;
+            overflow: hidden;
+        }
+
+        #menu ul li {
+            float: left;
+        }
+
+        #menu ul li a {
+            display: block;
+            padding: 14px 18px;
+            color: white;
+            text-decoration: none;
+        }
+
+        #menu ul li a:hover {
+            background-color: #d4a243;
+            color: black;
+        }
+
+        /* ===== CONTENIDO ===== */
+
+        #contenido {
+            padding: 25px;
+        }
+
+        h2 {
+            color: #3a5a40;
+        }
+
+        /* ===== TABLA PRINCIPAL ===== */
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #d4a243;
+        }
+
+        /* ===== TABLA ANIDADA ===== */
+
+        .tablaInterna {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fffaf3;
+        }
+
+        .tablaInterna td {
+            border: 1px solid #999;
+            padding: 5px;
+            font-size: 14px;
+        }
+
+        /* ===== PIE ===== */
+
+        #piePagina {
+            background-color: #3a5a40;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            border-top: 5px solid #d4a243;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="contenedor">
+
+    <!-- CABECERA -->
+    <div id="cabecera">
+        <h1>Platos típicos de Andalucía</h1>
+    </div>
+
+    <!-- MENÚ -->
+    <div id="menu">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="platos.html">Platos típicos</a></li>
+            <li><a href="galeria.html">Galería</a></li>
+            <li><a href="multimedia.html">Multimedia</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </div>
+
+    <!-- CONTENIDO -->
+    <div id="contenido">
+
+        <h2>Platos tradicionales</h2>
+
+        <table>
+            <tr>
+                <th>Plato</th>
+                <th>Provincia</th>
+                <th>Ingredientes principales</th>
+            </tr>
+
+            <tr>
+                <td>Flamenquín</td>
+                <td>Córdoba</td>
+                <td>
+                    <!-- TABLA ANIDADA -->
+                    <table class="tablaInterna">
+                        <tr>
+                            <td>Lomo</td>
+                            <td>Jamón</td>
+                        </tr>
+                        <tr>
+                            <td>Huevo</td>
+                            <td>Pan rallado</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Salmorejo</td>
+                <td>Córdoba</td>
+                <td>
+                    <table class="tablaInterna">
+                        <tr>
+                            <td>Tomate</td>
+                            <td>Pan</td>
+                        </tr>
+                        <tr>
+                            <td>Aceite</td>
+                            <td>Ajo</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Pescaíto frito</td>
+                <td>Cádiz</td>
+                <td>
+                    <table class="tablaInterna">
+                        <tr>
+                            <td>Pescado</td>
+                            <td>Harina</td>
+                        </tr>
+                        <tr>
+                            <td>Aceite</td>
+                            <td>Sal</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            
+<tr>
+    <td>Gazpacho</td>
+    <td>Sevilla</td>
+    <td>
+        <table class="tablaInterna">
+            <tr>
+                <td>Tomate</td>
+                <td>Pan</td>
+            </tr>
+            <tr>
+                <td>Aceite</td>
+                <td>Ajo</td>
+            </tr>
+        </table>
+    </td>
+</tr>
+
+<tr>
+    <td>Rabo de toro</td>
+    <td>Córdoba</td>
+    <td>
+        <table class="tablaInterna">
+            <tr>
+                <td>Rabo de toro</td>
+                <td>Cebolla</td>
+            </tr>
+            <tr>
+                <td>Zanahoria</td>
+                <td>Vino tinto</td>
+            </tr>
+        </table>
+    </td>
+</tr>
+
+
+        </table>
+
+    </div>
+
+    <!-- PIE -->
+    <div id="piePagina">
+        <p>Comida - Tradicional Andaluza</p>
+    </div>
+</div>
+</body>
+</html>
